@@ -1,0 +1,9 @@
+normal ear
+normal ear
+normal ear
+normal ear
+flipped ear
+normal ear
+
+
+end

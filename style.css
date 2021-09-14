@@ -1,0 +1,624 @@
+
+html {
+	height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+}
+
+::selection {
+	background: #403016;
+	color: #fff;
+}
+
+::-moz-selection {
+	background: #403016;
+	color: #fff;
+}
+
+footer {
+	width: 100%;
+	height: 60px;
+	opacity: 0.5;
+}
+
+div {
+	padding: 0.5em;
+}
+
+span {
+	padding: 0.1em;
+}
+
+img {
+	box-shadow: 3px 3px 12px black;
+	padding: 0.5em;
+}
+
+p {
+	padding: 1em;
+}
+
+a {
+	text-decoration: none;
+}
+
+table, th, td {
+	border: 1px solid gray;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+th {
+	text-align: center;
+}
+
+hr .seperate {
+	border-top: 1px dashed gray;
+}
+
+table {
+	width: 80%;
+	margin: 0 auto;
+}
+
+img {
+	display: block;
+	box-shadow: none;
+}
+
+code {
+	margin: auto;
+	padding: auto;
+	font-family: Consolas,"courier new";
+	color: crimson;
+	background-color: #f1f1f1;
+	font-size: 105%;
+
+}
+
+nav {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+
+.drop-down-menu {
+	display: flex;
+	margin: auto;
+	padding: 0;
+}
+
+.drop-down-menu > ul {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 0;
+}
+
+.drop-down-menu > ul .dropdown-list {
+	display: flex;
+}
+.drop-down-menu > ul .dropdown-list > li {
+	margin: auto 1em;
+}
+
+.drop-down-menu > ul .dropdown-list > li > a {
+	color: rgba(0,0,0,0.5);
+}
+
+.drop-down-menu > ul .dropdown-list > li > a:hover {
+	color: rgba(0,0,0,0.8);
+}
+
+.drop-down-menu > ul .dropdown-list > li.active {
+	text-decoration: underline;
+}
+
+.drop-down-menu > ul .dropdown-list > li.active > a{
+	color: rgba(0,0,0,1);
+
+}
+
+.dropdown-folder {
+	display: none;
+	margin: 0 1em 0.5em;
+	padding: 0 1em;
+}
+
+.dropdown-folder > a > span {
+	padding: 0.25em 0.5em;
+	color: rgba(0,0,0,0.5);
+	border: 2px solid rgba(0,0,0,0.5);
+}
+
+.dropdown-folder > a > span:hover {
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+}
+
+.form {
+	width: 450px;
+	display: block;
+	left: 20%;
+	margin: 1em auto;
+	padding: auto;
+	font-family: monospace;
+	background-color: #f1f1f1;
+	box-shadow: 2px 2px 5px 5px lightgray;
+}
+
+.form .form-content {
+	display: block; 
+	margin: auto; 
+	padding: auto; 
+	position: relative; 
+}
+
+.button {
+	display: block;
+	margin: auto;
+	padding: 0.5em 2em;
+	color: black;
+	background-color: white;
+	border-radius: 10px;
+	border: 2px solid black;
+}
+
+.button:hover{
+	background-color: black;
+	color: white;
+}
+
+.canvas {
+	display: block;
+	width: 90%;
+	height: 600px;
+	margin: auto;
+	padding: 0;
+	background-image: url(pic/canva_bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 1px solid black;
+}
+
+.canvas .start-img, .start-btn {
+	display: block;
+	margin: auto;
+	padding: auto;
+}
+
+.canvas .score-show {
+	display: none;
+	margin: 0;
+	padding: 0;
+	font-weight: bolder;
+	font-size: 160%;
+	font-family: monospace;
+}
+.canvas .end-img, .restart-btn {
+	display: none;
+	margin: auto;
+	padding: auto;
+}
+
+.canvas .control {
+	display: none;
+	margin: 1em;
+	padding: 0;
+}
+
+.canvas .control .detail {
+	float: left;
+	margin: 0 auto;
+	padding: 0 0.5em;
+	font-size: 20pt;
+	font-family: monospace;
+
+}
+
+.canvas .start-img img {
+	margin: 6em auto 0;
+	padding: auto;
+}
+.canvas .end-img img {
+	margin: 2em auto 0;
+	padding: auto;
+}
+
+.canvas .start-btn input {
+	margin: 3em auto;
+}
+
+.canvas .restart-btn input {
+	margin: 1em auto;
+}
+
+.canvas .control input {
+	float: right;
+	margin: 0 0.5em ;
+}
+
+.canvas .test {
+	display: none;
+	margin: 30% 0 0;
+	padding: 0;
+	width: 100%;
+	height: 20%;
+	background-color: rgba(255,255,255,0.5);
+}
+
+.canvas .test .row {
+	margin: 0;
+	padding: 0;
+	height: 50%;
+}
+
+.canvas .test .row .other{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.canvas .test .row .self{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.canvas .test .row .other input {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	border: none;
+	background-color: whitesmoke;
+}
+
+
+.canvas .test .row .other input:hover {
+	font-weight: bold;
+	background-color: orange;
+}
+
+.canvas .test .row .other input:active {
+	font-size: small;
+	background-color: darkorange;
+}
+.canvas .test .row .self input{
+	float: left;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	color: white;
+	background-color: darkred;
+	border: 4px solid gold;
+	pointer-events: none;
+}
+
+.canvas .start-btn input:hover, .control input:hover ,.restart-btn input:hover {
+	transform: scale(1.2);
+}
+
+.canvas .start-btn input:active, .control input:active, .restart-btn input:active {
+	transform: scale(0.9);
+}
+
+.cheatsheet th {
+	background-color: #403016;
+	color: whitesmoke;
+	font-size: large;
+}
+
+.cheatsheet td {
+	border-style: none;
+}
+
+.logo {
+	margin: 0.1em 0.5em;
+	padding: 0.1em 0.5em;
+	font-family: 'Zen Tokyo Zoo', cursive;
+	color: gray;
+	background-color: whitesmoke;
+	box-shadow: 
+		0 0 0 5px hsl(0,0%,91%),
+		0 0 0 10px hsl(0,0%,93%),
+		0 0 0 15px hsl(0,0%,95%)
+}
+
+.logo:hover {
+	transform: scale(1.05);
+}
+
+.zh {
+	font-family: 'Noto Serif TC', serif;
+}
+
+.center {
+	display:  block;
+	margin-left:  auto;
+	margin-right:  auto;
+	width: 50%;
+}
+
+.notes {
+	color: white;
+	background-color: gray;
+}
+
+.show {
+	text-decoration: underline;
+}
+
+.title {
+	font-family: sans-serif;
+	font-weight: bold;
+	text-align: center;
+	color: transparent;
+	-webkit-text-stroke: 3px gray;
+}
+
+.title > a {
+	color: transparent;
+	-webkit-text-stroke: 3px gray;
+}
+
+.divider {
+	text-align: center;
+	font-weight: bold;
+	font-family: monospace;
+	color: #5f5f5f;
+	border: 3px solid #5f5f5f;
+	box-shadow: 0.5rem 0.5rem #5f5f5f;
+	margin: 1em 0;
+	padding: 0.25em 0;
+
+}
+
+.protein-project-title {
+	display: block;
+	padding: 0;
+	margin: 0;
+	background-color: #403016;
+	position: fixed;
+	width: 100%;
+	height: 140px;
+}
+
+.protein-project-title .main-title {
+	width: 90%;
+	display: block;
+	margin: 0;
+	padding: auto 0;
+	background-color: #180C0A;
+	border-radius: 15px;
+	border: 3px solid gold;
+	color: gold;
+	text-transform: uppercase;
+	font-family: Times New Roman;
+	font-stretch: semi-condensed;
+	font-weight: bolder;
+	font-size: 3em;
+	-webkit-text-stroke: 2px gold;
+	box-shadow: 0.2em 0.2em gold;
+	position: fixed;
+	left: 5%;
+}
+
+.main-title .protein-title {
+	text-decoration: none; 
+	color: gold;
+}
+
+.main-title .protein-title:hover {
+	color: yellow;
+}
+
+.project {
+	width: 100%;
+	padding: 0 0 2em 0;
+	margin: 0;
+	display: block;
+	background-color: #403016;
+}
+
+.project .sidebar {
+	width: 20%;
+	padding: 0;
+	margin: 0 0.5em;
+	display: block;
+	position: fixed;
+	top: 20%;
+	left: 5%;
+	background-color: #e7e1d0;
+	box-shadow: 2px 10px 10px black;
+}
+
+.project .sidebar .menu {
+	padding: 1em;
+	font-weight: bold;
+	font-size: large;
+	text-decoration: underline;
+}
+
+.project .sidebar ul {
+	list-style-type: none;
+	background-color: #f3f1eb;
+	padding: 0;
+	margin: 0;
+}
+
+.project .sidebar ul a {
+	margin: 0;
+	text-decoration: none;
+	color: dimgray;
+}
+
+.project .sidebar ul a li {
+	list-style-type: none;
+	padding: 1em 0 1em 1em;
+	text-decoration: none;
+	border-top: 2px solid #e7e1d0;
+	border-bottom: 5px solid #e7e1d0;
+	margin: 0;
+}
+
+.project .sidebar ul li:hover {
+	background-color: #8b6425;
+	font-weight: bolder;
+	color: white;
+
+}
+
+.project .content {
+	width: 70%;
+	padding: 0;
+	margin: 0 1em;
+	display: block;
+	position: relative;
+	left: 25%;
+	text-align: center;
+	font-family: Times New Roman;
+	background-color: #403016;
+	border: 10px solid #403016;
+}
+
+.project .content .container section {
+	background-color: #f7e2bf;
+	width: 100%;
+	margin: 2em 0;
+	padding: 2em 1em 3em;
+	border-radius: 30px;
+	border: 10px solid #8b6425;
+}
+
+.project .content .container section > div > h2 {
+	font-weight: bold;
+	padding-bottom: 0.5em;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 2px 2px darkgray;
+	color: #312004;
+}
+
+.project .content .container section > div > h3 {
+	margin: 1em auto 0.5em;
+	text-align: center;
+	font-weight: bolder;
+	color: darkred;
+}
+
+.project .content .container section > div .section-content {
+	display: block;
+	text-align: left;
+	padding: auto;
+	margin: auto 3em;
+	font-size: 14pt;
+	color: #681B0A;
+
+}
+
+.reference-link {
+	text-decoration: none;
+	color: darkgoldenrod;
+	font-size: 15pt;
+}
+
+.reference-link:hover {
+	color: brown;
+}
+
+.ans {
+	display: block;
+}
+
+#myname {
+	text-align: center;
+	font-size: 60px;
+}
+
+#selfphoto {
+	padding: 4em;
+}
+
+#selfimg {
+	box-shadow: 2px 2px 5px 5px gray;
+}
+
+#selfintro {
+	padding: 6em;
+}
+
+#time {
+	color: firebrick;
+	font-weight: bold;
+}
+
+#answer {
+	color: black;
+}
+
+#content-body {
+	min-height: 85vh;
+}
+
+@media screen and (max-width: 1000px){
+	#selfphoto {
+		width: 100%;
+		padding-top: 5em;
+	}
+
+	#selfintro {
+		width: 100%;
+	}
+
+	#dropdown {
+		display: block;
+	}
+
+	.drop-down-menu > ul .dropdown-list {
+		display: none;
+		background-color: white;
+		border: 1px solid rgba(0,0,0,.5);
+		box-shadow: 0.25em 0.25em 0.25em rgba(0,0,0,.5);
+		position: relative;
+		z-index: 2;
+	}
+	
+	.dropdown-folder {
+		display: block;
+	}
+
+	.project .sidebar {
+		width: 80%;
+		display: block;
+		margin: 2em auto auto;
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+
+	.project .content {
+		width: 100%;
+		position: relative;
+		left: 0;
+		margin: auto;
+		padding: auto;
+
+	}
+
+	#canvas {
+		height: 400px;
+	}
+}
